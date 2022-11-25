@@ -16,4 +16,12 @@
     [image]="names.indexOf(wichtel[wichtelId][1]) + 1"
     (click)="onReveal()"
   ></owl>
+  <button
+    *ngIf="state == State.REVEAL"
+    mat-raised-button
+    color="accent"
+    (click)="onReveal()"
+  >
+    🎉 Konfetti! 🎉
+  </button>
 </div>

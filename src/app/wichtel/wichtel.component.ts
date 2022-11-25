@@ -14,14 +14,11 @@ enum State {
 })
 export class WichtelComponent {
   names = ['Silva', 'Noame', 'Leon', 'Lukas', 'Chris', 'Anni'];
-  wichtel = [
-    ['Silva', 'Leon'],
-    ['Noame', 'Chris'],
-    ['Leon', 'Anni'],
-    ['Lukas', 'Noame'],
-    ['Chris', 'Silva'],
-    ['Anni', 'Lukas'],
-  ];
+  wichtel = JSON.parse(
+    atob(
+      'W1siU2lsdmEiLCJOb2FtZSJdLFsiTm9hbWUiLCJDaHJpcyJdLFsiTGVvbiIsIkFubmkiXSxbIkx1a2FzIiwiU2lsdmEiXSxbIkNocmlzIiwiTHVrYXMiXSxbIkFubmkiLCJMZW9uIl1d'
+    )
+  );
   @Input() wichtelId = 0;
   state = State.INIT;
   State = State;

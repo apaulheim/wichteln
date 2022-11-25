@@ -47,3 +47,12 @@ button {
     align-content: start;
   }
 }
+
+.github {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+.github img {
+  max-width: 50px;
+}
