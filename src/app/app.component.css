@@ -1,0 +1,21 @@
+body {
+  display: flex;
+}
+
+:host {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  /* margin-top: 100px; */
+  max-width: 800px;
+  justify-content: space-around;
+  align-content: space-around;
+  /* margin: auto; */
+  align-self: center;
+}

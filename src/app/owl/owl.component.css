@@ -1,0 +1,29 @@
+.owl-container {
+  position: relative;
+  max-height: 200px;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px;
+}
+img {
+  max-height: 200px;
+}
+.name-container {
+  position: absolute;
+  display: flex;
+  top: 70%;
+  width: 150px;
+  background-color: darkred;
+  color: white;
+  text-align: center;
+  height: 20%;
+  border-radius: 10px;
+  justify-content: center;
+  /* border: 3px white solid; */
+}
+.name {
+  align-self: center;
+  font-size: 1.5em;
+  font-family: "Permanent Marker";
+  text-transform: uppercase;
+}
