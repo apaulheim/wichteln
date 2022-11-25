@@ -4,7 +4,7 @@ body {
 
 :host {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: center;
   height: 100vh;
 }
@@ -18,4 +18,32 @@ body {
   align-content: space-around;
   /* margin: auto; */
   align-self: center;
+}
+
+.container-wichtel {
+  display: flex;
+  flex-flow: column nowrap;
+  /* margin-top: 100px; */
+  max-width: 800px;
+  justify-content: space-around;
+  align-content: space-around;
+  /* margin: auto; */
+  align-self: center;
+}
+
+button {
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  :host {
+    flex-flow: column nowrap;
+    height: auto;
+  }
+  .container,
+  .container-wichtel {
+    flex-flow: column nowrap;
+    justify-content: start;
+    align-content: start;
+  }
 }

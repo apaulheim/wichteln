@@ -1,0 +1,19 @@
+<div class="container">
+  <owl [name]="wichtel[wichtelId][0]" [image]="wichtelId + 1"></owl>
+  <p class="greet">Hallo {{ wichtel[wichtelId][0] }}!</p>
+  <p class="greetsub">Dein Wichtel ist...</p>
+  <button
+    *ngIf="state == State.INIT"
+    mat-raised-button
+    color="accent"
+    (click)="onReveal()"
+  >
+    Zieh einen Wichtel
+  </button>
+  <owl
+    *ngIf="state == State.REVEAL"
+    [name]="wichtel[wichtelId][1]"
+    [image]="names.indexOf(wichtel[wichtelId][1]) + 1"
+    (click)="onReveal()"
+  ></owl>
+</div>

@@ -1,0 +1,37 @@
+:host {
+  color: white;
+  font-family: "Pacifico";
+}
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+.container p,
+.container button {
+  text-align: center;
+}
+
+.greet,
+.greetsub {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.greet {
+  font-size: 2.5em;
+}
+
+.greetsub {
+  font-size: 1.5em;
+}
+
+button {
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    justify-content: start;
+  }
+}

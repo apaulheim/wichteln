@@ -1,3 +1,7 @@
+:host {
+  cursor: pointer;
+}
+
 .owl-container {
   position: relative;
   max-height: 200px;
@@ -26,4 +30,35 @@ img {
   font-size: 1.5em;
   font-family: "Permanent Marker";
   text-transform: uppercase;
+}
+
+@media only screen and (max-width: 600px) {
+  .owl-container {
+    max-height: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px;
+  }
+  img {
+    max-height: 150px;
+  }
+  .name-container {
+    position: absolute;
+    display: flex;
+    top: 70%;
+    width: 120px;
+    background-color: darkred;
+    color: white;
+    text-align: center;
+    height: 20%;
+    border-radius: 10px;
+    justify-content: center;
+    /* border: 3px white solid; */
+  }
+  .name {
+    align-self: center;
+    font-size: 1em;
+    font-family: "Permanent Marker";
+    text-transform: uppercase;
+  }
 }

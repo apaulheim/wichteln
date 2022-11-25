@@ -1,6 +1,13 @@
 <snowflakes></snowflakes>
-<div class="container">
-  <div *ngFor="let name of names; index as i">
+<div *ngIf="currentPage == Page.OVERVIEW" class="container">
+  <div *ngFor="let name of names; index as i" (click)="detailsFor(i)">
     <owl [name]="name" [image]="i + 1"></owl>
   </div>
+</div>
+
+<div *ngIf="currentPage == Page.DETAIL" class="container-wichtel">
+  <wichtel [wichtelId]="currentWichtel"></wichtel>
+  <button mat-raised-button (click)="currentPage = Page.OVERVIEW">
+    Zurück
+  </button>
 </div>
