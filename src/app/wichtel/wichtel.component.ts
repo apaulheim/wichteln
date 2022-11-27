@@ -13,10 +13,10 @@ enum State {
   styleUrls: ['./wichtel.component.css'],
 })
 export class WichtelComponent {
-  names = ['Silva', 'Noame', 'Leon', 'Lukas', 'Chris', 'Anni'];
+  names = ['Silva', 'Luka', 'Leon', 'Lukas', 'Chris', 'Anni'];
   wichtel = JSON.parse(
     atob(
-      'W1siU2lsdmEiLCJOb2FtZSJdLFsiTm9hbWUiLCJDaHJpcyJdLFsiTGVvbiIsIkFubmkiXSxbIkx1a2FzIiwiU2lsdmEiXSxbIkNocmlzIiwiTHVrYXMiXSxbIkFubmkiLCJMZW9uIl1d'
+      'W1siU2lsdmEiLCJBbm5pIl0sWyJMdWthIiwiTGVvbiJdLFsiTGVvbiIsIkNocmlzIl0sWyJMdWthcyIsIkx1a2EiXSxbIkNocmlzIiwiU2lsdmEiXSxbIkFubmkiLCJMdWthcyJdXQ=='
     )
   );
   @Input() wichtelId = 0;

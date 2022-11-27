@@ -1,8 +1,20 @@
 <snowflakes></snowflakes>
-<div *ngIf="currentPage == Page.OVERVIEW" class="container">
-  <div *ngFor="let name of names; index as i" (click)="detailsFor(i)">
-    <owl [name]="name" [image]="i + 1"></owl>
+<div *ngIf="currentPage == Page.OVERVIEW" class="overview">
+  <h1>Hallo liebe Wichtel!</h1>
+  <p>
+    Findet eure Eule* und erfahrt, wen ihr dieses Weihnachten beschenken dürft.
+  </p>
+  <div class="container">
+    <div *ngFor="let name of names; index as i" (click)="detailsFor(i)">
+      <owl [name]="name" [image]="i + 1"></owl>
+    </div>
   </div>
+  <p>
+    <small
+      >* Die Weihnachtselfen haben keinen Login eingebaut, weil sie wissen, dass
+      ihr brav seid und nur eure Eule auswählt.</small
+    >
+  </p>
 </div>
 
 <div *ngIf="currentPage == Page.DETAIL" class="container-wichtel">
@@ -10,9 +22,4 @@
   <button mat-raised-button (click)="currentPage = Page.OVERVIEW">
     Zurück
   </button>
-</div>
-<div class="github">
-  <a href="https://github.com/apaulheim/wichteln" target="blank"
-    ><img src="assets/github.png"
-  /></a>
 </div>

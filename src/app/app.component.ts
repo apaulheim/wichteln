@@ -11,7 +11,7 @@ enum Page {
 })
 export class AppComponent {
   title = 'angular-test';
-  names = ['Silva', 'Noame', 'Leon', 'Lukas', 'Chris', 'Anni'];
+  names = ['Silva', 'Luka', 'Leon', 'Lukas', 'Chris', 'Anni'];
   currentPage = Page.OVERVIEW;
   currentWichtel = 0;
 
