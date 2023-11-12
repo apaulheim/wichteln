@@ -1,4 +1,4 @@
-const names = ["Silva", "Luka", "Leon", "Lukas", "Chris", "Anni"];
+const names = ["Silva", "Leon", "Lukas", "Chris", "Anni"];
 let wichtel = names.slice();
 let pairs = [];
 
@@ -20,7 +20,6 @@ const generate = () => {
     pairs.push([person, wichtelName]);
     wichtel.splice(wichtelId, 1);
   }
-  if (pairs[3][1] == "Chris") err = -1;
   return err;
 };
 

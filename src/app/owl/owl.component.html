@@ -1,5 +1,8 @@
 <div class="owl-container">
-  <img [src]="'assets/C' + image + '.png'" />
+  <div
+    class="owl-image"
+    [style]="'background-image: url(assets/C' + image + '.png)'"
+  ></div>
   <div class="name-container">
     <div class="name">{{ name }}</div>
   </div>

@@ -1,5 +1,6 @@
 <snowflakes></snowflakes>
 <div *ngIf="currentPage == Page.OVERVIEW" class="overview">
+  <p>Weihnachten 2023</p>
   <h1>Hallo liebe Wichtel!</h1>
   <p>
     Findet eure Eule* und erfahrt, wen ihr dieses Weihnachten beschenken dürft.
@@ -15,6 +16,8 @@
       ihr brav seid und nur eure Eule auswählt.</small
     >
   </p>
+  <p style="line-height: 1.8em">Special Guest</p>
+  <owl name="Noame" [image]="6"></owl>
 </div>
 
 <div *ngIf="currentPage == Page.DETAIL" class="container-wichtel">
