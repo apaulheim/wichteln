@@ -7,13 +7,13 @@ body {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  height: 100vh;
 }
 
 .overview {
   align-self: center;
   flex-flow: column nowrap;
   max-width: 800px;
+  margin-top: 5em;
 }
 
 .container {
@@ -44,8 +44,7 @@ small {
     ),
     radial-gradient(
       ellipse farthest-corner at left top,
-      #ffffff 0%,
-      #ffffac 8%,
+      #ffffac 0%,
       #d1b464 25%,
       #5d4a1f 62.5%,
       #5d4a1f 100%

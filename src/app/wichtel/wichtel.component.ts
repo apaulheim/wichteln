@@ -16,7 +16,7 @@ export class WichtelComponent {
   names = ['Silva', 'Leon', 'Lukas', 'Chris', 'Anni'];
   wichtel = JSON.parse(
     atob(
-      'W1siU2lsdmEiLCJBbm5pIl0sWyJMZW9uIiwiU2lsdmEiXSxbIkx1a2FzIiwiQ2hyaXMiXSxbIkNocmlzIiwiTGVvbiJdLFsiQW5uaSIsIkx1a2FzIl1d'
+      'W1siU2lsdmEiLCJMdWthcyJdLFsiTGVvbiIsIlNpbHZhIl0sWyJMdWthcyIsIkFubmkiXSxbIkNocmlzIiwiTGVvbiJdLFsiQW5uaSIsIkNocmlzIl1d'
     )
   );
   @Input() wichtelId = 0;
