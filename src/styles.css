@@ -1,5 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
-
+html {
+  min-height: 100%;
+}
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
@@ -17,7 +19,9 @@ body {
     ),
     radial-gradient(
       ellipse farthest-corner at left top,
-      #d1b464 0%,
+      #ffffff 0%,
+      #ffffac 8%,
+      #d1b464 25%,
       #5d4a1f 62.5%,
       #5d4a1f 100%
     ) !important;

@@ -50,7 +50,8 @@ p {
 }
 
 button {
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 @media only screen and (max-width: 600px) {
