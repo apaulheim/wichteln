@@ -20,14 +20,33 @@ const generate = () => {
     pairs.push([person, wichtelName]);
     wichtel.splice(wichtelId, 1);
   }
+  if (err == 0) {
+    return pairs;
+  }
   return err;
 };
 
-let sucess = 0;
-do {
-  sucess = generate();
-} while (sucess != 0);
+const generateNewPair = () => {
+  let success = 0;
+  do {
+    success = generate();
+    console.log("Trying again");
+  } while (success == -1);
+  return success;
+};
 
-// console.log(pairs);
-const b64 = Buffer.from(JSON.stringify(pairs)).toString("base64");
+const getPairsIds = (p) => {
+  let ids = [];
+  for (pair of p) {
+    ids.push([names.indexOf(pair[0]), names.indexOf(pair[1])]);
+  }
+  return ids;
+};
+
+const b64 = Buffer.from(JSON.stringify(generateNewPair())).toString("base64");
 console.log(b64);
+
+module.exports = {
+  generateNewPair,
+  getPairsIds,
+};
