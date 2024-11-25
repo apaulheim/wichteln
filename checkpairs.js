@@ -6,8 +6,7 @@ let lastPairs = JSON.parse(
   )
 );
 let currentPairs = generateNewPair();
-console.log("Last pairs: ", getPairsIds(lastPairs));
-console.log("Last pairs: ", lastPairs);
-console.log("Current pairs: ", getPairsIds(currentPairs));
-console.log("Current pairs b64: ");
+console.log("Letzte Wichtelpaare (2023): ", getPairsIds(lastPairs));
+console.log("Generierte Wichtelpaare: ", getPairsIds(currentPairs));
+console.log("Generierte Wichtelpaare b64: ");
 console.log(Buffer.from(JSON.stringify(currentPairs)).toString("base64"));

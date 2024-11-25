@@ -1,6 +1,5 @@
 body {
   display: flex;
-  background-image: url("../assets/bg.png");
 }
 
 :host {
@@ -124,4 +123,13 @@ button {
 }
 .github img {
   max-width: 50px;
+}
+
+.attribution {
+  text-align: center;
+}
+
+.attribution a {
+  color: rgb(50, 50, 50);
+  font-size: small;
 }

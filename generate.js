@@ -30,7 +30,6 @@ const generateNewPair = () => {
   let success = 0;
   do {
     success = generate();
-    console.log("Trying again");
   } while (success == -1);
   return success;
 };
@@ -42,9 +41,6 @@ const getPairsIds = (p) => {
   }
   return ids;
 };
-
-const b64 = Buffer.from(JSON.stringify(generateNewPair())).toString("base64");
-console.log(b64);
 
 module.exports = {
   generateNewPair,
