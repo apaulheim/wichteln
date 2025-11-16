@@ -21,13 +21,14 @@
   display: flex;
   top: 90%;
   width: 150px;
-  background-color: #2b5148;
+  background: linear-gradient(135deg, #6b8aa7, #3c4e5b);
   color: white;
   text-align: center;
   height: 20%;
   border-radius: 10px;
   justify-content: center;
-  /* border: 3px white solid; */
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+  /* border: 2px white solid; */
 }
 .name {
   align-self: center;
@@ -47,16 +48,7 @@
     max-height: 150px;
   }
   .name-container {
-    position: absolute;
-    display: flex;
-    top: 90%;
     width: 120px;
-    background-color: #2b5148;
-    color: white;
-    text-align: center;
-    height: 20%;
-    border-radius: 10px;
-    justify-content: center;
     /* border: 3px white solid; */
   }
   .name {

@@ -3,27 +3,29 @@ let wichtel = names.slice();
 let pairs = [];
 
 const generate = () => {
-  let err = 0;
+  // Create shuffled copy using Fisher-Yates
   wichtel = names.slice();
-  pairs = [];
-  for (person of names) {
-    let wichtelName = person;
-    let wichtelId = 0;
-    while (wichtelName == person && wichtel.length > 0) {
-      wichtelId = Math.floor(Math.random() * wichtel.length);
-      wichtelName = wichtel[wichtelId];
-    }
-    if (wichtelName == person && wichtel.length == 1) {
-      console.error("failed, trying again");
-      err = -1;
-    }
-    pairs.push([person, wichtelName]);
-    wichtel.splice(wichtelId, 1);
+  for (let i = wichtel.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [wichtel[i], wichtel[j]] = [wichtel[j], wichtel[i]];
   }
-  if (err == 0) {
-    return pairs;
+
+  // Check if anyone got themselves
+  for (let i = 0; i < names.length; i++) {
+    if (names[i] === wichtel[i]) {
+      // Swap with next person (wrapping around)
+      const swapIdx = (i + 1) % names.length;
+      // If swap also causes a match, restart
+      if (names[swapIdx] === wichtel[i] || names[i] === wichtel[swapIdx]) {
+        return -1;
+      }
+      [wichtel[i], wichtel[swapIdx]] = [wichtel[swapIdx], wichtel[i]];
+    }
   }
-  return err;
+
+  // Build pairs
+  pairs = names.map((person, i) => [person, wichtel[i]]);
+  return pairs;
 };
 
 const generateNewPair = () => {

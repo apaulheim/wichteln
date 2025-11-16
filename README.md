@@ -13,6 +13,6 @@ Neue geheime Wichtelpaarungen gibt's mit
 node checkpairs.js
 ```
 
-Dann das base64 kopieren nach `wichtel.component.ts`
+Dort kann man auch mit Hilfe von IDs sehen, ob jeder einen Wichtel hat und ob die Paarung nicht zu ähnlich ist zu den letzten Jahren.
 
-Dort kann man auch mit Hilfe von IDs sehen, ob jeder einen Wichtel hat und ob die Paarung nicht zu ähnlich ist zu letztem mal.
+Dann das base64 kopieren nach `wichtel.component.ts`
